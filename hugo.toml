@@ -18,9 +18,10 @@ unsafe = true
 
 [params]
 author = 'Sergey Khokhlov'
-description = "Sergey Khokhlov's personal site and technical blog."
-keywords = 'platform engineering,infrastructure,devops,cyclonedx,blog'
-info = ['Platform Engineer', 'CycloneDX Gradle plugin maintainer']
+description = "Sergey Khokhlov — Platform Engineer in London. Notes on internal developer platforms, supply chain security, and the Java ecosystem."
+keywords = 'platform engineering,internal developer platform,idp,supply chain security,sbom,cyclonedx,openrewrite,gradle,jvm,devsecops'
+info = ['Platform Engineer', 'Internal Developer Platforms', 'OWASP CycloneDX Gradle Plugin maintainer']
+avatarURL = 'images/avatar.jpg'
 dateFormat = 'January 2, 2006'
 since = 2019
 colorScheme = 'auto'
