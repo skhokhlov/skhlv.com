@@ -24,4 +24,6 @@ Personal website at https://skhlv.com — a Hugo static site deployed via GitHub
 
 ## Deployment
 
-GitHub Pages serves the site at the apex domain via `CNAME` (`skhlv.com`). Confirm with the user before changing the deployment flow — there is no CI config checked in, so deploys may currently be manual (committing `public/`) or configured at the GitHub repo level outside this tree.
+GitHub Pages serves the site at `https://skhlv.com` via `.github/workflows/hugo.yml`. The workflow runs on push to `master` (and via manual `workflow_dispatch`), builds with the pinned `HUGO_VERSION`, and deploys with `actions/deploy-pages@v4`. The custom-domain binding is kept in `static/CNAME` so Hugo copies it into every build — do not move it back to the repo root or the binding can drop on deploy.
+
+To bump Hugo, update `HUGO_VERSION` in the workflow to match the locally tested version.
