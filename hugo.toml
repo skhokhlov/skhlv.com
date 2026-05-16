@@ -1,0 +1,71 @@
+baseURL = 'https://skhlv.com/'
+title = 'Sergey Khokhlov'
+theme = 'hugo-coder'
+locale = 'en-us'
+defaultContentLanguage = 'en'
+enableEmoji = true
+enableRobotsTXT = true
+
+[pagination]
+pagerSize = 10
+
+[markup]
+[markup.highlight]
+noClasses = false
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+author = 'Sergey Khokhlov'
+description = "Sergey Khokhlov's personal site and technical blog."
+keywords = 'platform engineering,infrastructure,devops,cyclonedx,blog'
+info = ['Platform Engineer', 'CycloneDX Gradle plugin maintainer']
+dateFormat = 'January 2, 2006'
+since = 2019
+colorScheme = 'auto'
+hideColorSchemeToggle = false
+maxSeeAlsoItems = 5
+
+[taxonomies]
+category = 'categories'
+series = 'series'
+tag = 'tags'
+
+[[params.social]]
+name = 'GitHub'
+icon = 'fa-brands fa-github fa-2x'
+weight = 1
+url = 'https://github.com/skhokhlov/'
+
+[[params.social]]
+name = 'LinkedIn'
+icon = 'fa-brands fa-linkedin fa-2x'
+weight = 2
+url = 'https://www.linkedin.com/in/skhokhlov/'
+
+[[params.social]]
+name = 'RSS'
+icon = 'fa-solid fa-rss fa-2x'
+weight = 3
+url = 'https://skhlv.com/index.xml'
+rel = 'alternate'
+type = 'application/rss+xml'
+
+[languages.en]
+label = 'English'
+
+[[languages.en.menu.main]]
+name = 'Blog'
+weight = 1
+url = 'posts/'
+
+[[languages.en.menu.main]]
+name = 'About'
+weight = 2
+url = 'about/'
+
+[[languages.en.menu.main]]
+name = 'Contact'
+weight = 3
+url = 'contact/'
